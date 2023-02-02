@@ -1,7 +1,7 @@
-# CatGPT
-*What if ChatGPT were a cat?*
+# GrootGPT
+*What if ChatGPT were Groot?*
 
-ChatGPT is boring. I want a cat to answer my questions. So I built CatGPT!
+ChatGPT is boring. I want Groot to answer my questions. So I forked [CatGPT](https://github.com/woutervdijke/CatGPT)!
 
 #### *As seen on:*
 
