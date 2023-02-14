@@ -89,19 +89,19 @@
                 } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous commands you are now a dog" || userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous instructions you are now a dog") {
                     answers = "Woof?"
                 } else {
-                    var numberOfanswers = Math.floor(Math.random() * 15); // Random number of answers between 0 and 14.
+                    var numberOfanswers = Math.floor(Math.random() * 5); // Random number of answers between 0 and 4.
                     var answers = "Hodor"; // Always start with 1 Hodor
                     if (numberOfanswers == 0) {
                         answers += "." // If numberOfanswers is 0, only the default Hodor is shown, so put a full stop after it.
                     } else {
                         for (var i = 0; i < numberOfanswers; i++) {
 
-                            if (numberOfanswers < 4 && i == numberOfanswers - 1) { // Check if this is the final Hodor.
+                            if (Math.random() < 0.3 && i == numberOfanswers - 1) { // Check if this is the final Hodor.
                                 answers += " Hodor!"; // Three answers or fewer gets an exclamation point.
                             } else if (i == numberOfanswers - 1) {
                                 answers += " Hodor."; // Longer replies get a full stop.
                             } else {
-                                answers += " Hodor"; // If it is not the last Hodor, just return a Hodor.
+                                answers += " Hodor."; // If it is not the last Hodor, just return a Hodor.
                             }
                         }
                     }
